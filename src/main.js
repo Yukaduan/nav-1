@@ -6,9 +6,9 @@ const xObject = JSON.parse(x)
 console.log({ x });
 
 const hashMap = xObject || [
-    { logo: 'CN', imgurl: './images/cn.png', url: 'https://flk.npc.gov.cn/' },
-    { logo: 'US', imgurl: './images/us.png', url: 'https://www.congress.gov/' },
-    { logo: 'JP', imgurl: './images/us.png', url: 'https://elaws.e-gov.go.jp/' },
+    { logo: 'F', imgurl: './images/cn.png', url: 'https://flk.npc.gov.cn/' },
+    { logo: 'C', imgurl: './images/us.png', url: 'https://congress.gov/' },
+    { logo: 'E', imgurl: './images/us.png', url: 'https://elaws.e-gov.go.jp/' },
 
 ]
 const simplifyUrl = (url) => {

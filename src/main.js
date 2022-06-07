@@ -2,9 +2,14 @@ const $siteList = $('.siteList')
 const $lastLi = $siteList.find('li.last')
 const x = localStorage.getItem('x')
 const xObject = JSON.parse(x)
+
+console.log({ x });
+
 const hashMap = xObject || [
-    { logo: 'A', url: 'https://www.acfun.cn' },
-    { logo: 'B', url: 'https://www.bilibili.com' }
+    { logo: 'CN', imgurl: './images/cn.png', url: 'https://flk.npc.gov.cn/' },
+    { logo: 'US', imgurl: './images/us.png', url: 'https://www.congress.gov/' },
+    { logo: 'JP', imgurl: './images/us.png', url: 'https://elaws.e-gov.go.jp/' },
+
 ]
 const simplifyUrl = (url) => {
     return url.replace('https://', '')
@@ -14,7 +19,7 @@ const simplifyUrl = (url) => {
 }
 
 const render = () => {
-    $siteList.find('li:not(.last)').remove()
+    $siteList.find('ul:not(.siteList)').remove()
     hashMap.forEach((node, index) => {
         const $li = $(`<li>
       <div class="site">

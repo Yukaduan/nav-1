@@ -1,1 +1,1 @@
-{"id":"images\\jp.png","dependencies":[],"generated":{"js":"module.exports = \"/271bb7de0afaf5f22a7b6a8fc3b29443.png\";"},"hash":"9bd2dd78dab58eebdacd85cf14339a03","cacheData":{"env":{}}}
+{"id":"images\\jp.png","dependencies":[{"name":"H:\\Yuka\\nav-1\\package.json","includedInParent":true,"mtime":1654533619429}],"generated":{"js":"module.exports = \"/271bb7de0afaf5f22a7b6a8fc3b29443.png\";"},"hash":"9bd2dd78dab58eebdacd85cf14339a03","cacheData":{"env":{}}}

@@ -19,7 +19,7 @@ const simplifyUrl = (url) => {
 }
 
 const render = () => {
-    $siteList.find('ul:not(.siteList)').remove()
+    $siteList.find(li => li.startsWith("l")).remove()
     hashMap.forEach((node, index) => {
         const $li = $(`<li>
       <div class="site">
